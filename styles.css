@@ -1,36 +1,96 @@
-body {
-  background-color: #fdf6e3;
-  font-family: Arial, sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 20px;
-}
+!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Minh Recipes</title>
+  <style>
+    /* Reset cơ bản */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-h1 {
-  color: #e67e22;
-  text-align: center;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
 
-section {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 20px;
-}
+    /* Navbar */
+    .nav {
+      background-color: #25f0df;
+      padding: 10px 20px;
+      position: sticky; /* giữ menu trên cùng khi cuộn */
+      top: 0;
+      z-index: 1000;
+    }
 
-footer {
-  text-align: center;
-  color: #666;
-  margin-top: 40px;
-}
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 cột */
-  gap: 20px;
-}
-@media (max-width: 600px) {
-  main {
-    grid-template-columns: 1fr;
-  }
-}
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-right: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00; /* đổi màu khi hover */
+    }
+
+    /* Nội dung */
+    .content {
+      padding: 20px;
+    }
+
+    .recipe {
+      background: white;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .recipe h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .recipe p {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Trang Chủ</a></li>
+      <li><a href="theloai.html">Thể Loại</a></li>
+      <li><a href="phobien.html">Phổ Biến</a></li>
+    </ul>
+  </nav>
+
+  <!-- Nội dung -->
+  <div class="content">
+    <div class="recipe">
+      <h2>Trứng luộc</h2>
+      <p>Cách làm trứng luộc đơn giản...</p>
+    </div>
+
+    <div class="recipe">
+      <h2>Trứng chiên</h2>
+      <p>Cách làm trứng chiên thơm ngon...</p>
+    </div>
+  </div>
+</body>
+</html>
