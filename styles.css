@@ -18,12 +18,9 @@
 
     /* Navbar */
     .nav {
-      background-color: #25f0df;
-      padding: 10px 20px;
-      position: sticky; /* giữ menu trên cùng khi cuộn */
-      top: 0;
-      z-index: 1000;
-    }
+        min-height: 42px;
+        background-color: #EF5122;
+        display: flex;
 
     nav ul {
       list-style: none;
@@ -94,3 +91,4 @@
   </div>
 </body>
 </html>
+
