@@ -18,17 +18,22 @@
 
     /* Navbar */
     .nav {
-        background-color: #EF5122;
+        background-color: #0c2180;
         pading: 10px 20px;
     }
+
+    /* Danh sách thanh điều hướng */
     .nav-list {
       list-style: none;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      gap: 30px; /* Khoảng cách giữa các mục */
+      gap: 30px; /* Khoảng cách giữa các mục điều hướng */
+      margin: 0;
+      padding: 0;
     }
 
+    /* Mục điều hướng */
     .nav-item a {
       color:#f9f9f9;
       text-decoration: none;
@@ -38,6 +43,7 @@
       transition: background-color 0.3s ease;
    }
 
+  /* Hover hiệu ứng */
     .nav-item a {
       color: white;
       text-decoration: none;
@@ -100,6 +106,7 @@
   </div>
 </body>
 </html>
+
 
 
 
