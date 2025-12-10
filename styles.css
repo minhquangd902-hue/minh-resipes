@@ -18,30 +18,37 @@
 
     /* Navbar */
     .nav {
-        min-height: 42px;
         background-color: #EF5122;
-        display: flex;
-
-    nav ul {
+        pading: 10px 20px;
+    }
+    .nav-list {
       list-style: none;
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      gap: 30px; /* Khoảng cách giữa các mục */
     }
 
-    nav ul li {
-      margin-right: 30px;
-    }
+    .nav-item a {
+      color:#f9f9f9;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+   }
 
-    nav ul li a {
+    .nav-item a {
       color: white;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s ease;
     }
 
-    nav ul li a:hover {
-      color: #ffcc00; /* đổi màu khi hover */
+    nav-item a:hover {
+      background-color: #ffcc00;
+      color: #333;
+      border-radius: 4px;
     }
 
     /* Nội dung */
@@ -91,4 +98,5 @@
   </div>
 </body>
 </html>
+
 
