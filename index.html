@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    
    <!-- Nút 3 gạch -->
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
@@ -20,6 +21,20 @@
     <li><a href="dangky.html">Đăng ký</a></li>
   </ul>
 </nav>
+
+<!-- JavaScript đặt ngay dưới nav, trước khi đóng body -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+ </script>
+  </body>
+    
 
     <main>
       <section id="trung-chien">
@@ -50,6 +65,7 @@
   </body>
 
 </html>
+
 
 
 
