@@ -18,15 +18,17 @@
 
     .menu-toggle {
   font-size: 30px;
-  cursor: pointer;
+  cursor: pointer; /* biến thành con trỏ tay khi hover */
   padding: 10px;
   background-color: #EF5122;
   color: white;
+  display: inline-block; /* đảm bảo nó là khối bấm được
   border: none;
 }
 
 .menu {
-  display: none;
+   display: inline-block; /* đảm bảo nó là khối bấm được */
+}
   background-color: #EF5122;
   padding: 10px;
 }
@@ -110,6 +112,7 @@
   </div>
 </body>
 </html>
+
 
 
 
