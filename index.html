@@ -74,7 +74,29 @@
   }
  </script>
   </body>
-    
+
+  <script>
+  const openBtn = document.getElementById('open-register');
+  const closeBtn = document.getElementById('close-register');
+  const modal = document.getElementById('register-modal');
+  
+  // Mở modal khi bấm nút đăng ký
+  openBtn.addEventListener('click', () => {
+  modal.classList.add('open');
+  });
+  
+  // Đóng modal khi bấm nút đóng
+  closeBtn.addEventListener('click', () => {
+  modal.classList.remove('open');
+  });
+  
+  // Đóng modal khi click ra ngoài vùng form
+  modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+  modal.classList.remove('open');
+  }
+  });
+  </script>
 
     <main>
       <section id="trung-chien">
@@ -105,6 +127,7 @@
   </body>
 
 </html>
+
 
 
 
