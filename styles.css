@@ -66,6 +66,17 @@ input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; 
 button { padding: 10px 14px; border-radius: 8px; border: none; background: #2f6fed; color: #fff; cursor: pointer; }
 button#close-register { background: #999; }
 
+ .modal {
+  display: none; /* Ẩn ban đầu */
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+.modal.open {
+  display: grid; /* Khi có class "open" thì hiện ra */
+  place-items: center;
+}
+
   /* Hover hiệu ứng */
     .nav-item a {
       color: white;
@@ -129,6 +140,7 @@ button#close-register { background: #999; }
   </div>
 </body>
 </html>
+
 
 
 
