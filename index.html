@@ -21,6 +21,46 @@
     <li><a href="dangky.html">Đăng ký</a></li>
   </ul>
 </nav>
+ <button id="open-register">Đăng ký</button>
+
+<div id="register-modal" class="modal">
+  <div class="modal-content">
+    <h3>Đăng ký tài khoản</h3>
+    <form id="register-form" novalidate>
+      <label>
+        Họ và tên
+        <input type="text" name="fullname" id="fullname" required minlength="2" />
+        <small class="error" id="err-fullname"></small>
+      </label>
+
+      <label>
+        Biệt danh
+        <input type="text" name="nickname" id="nickname" required minlength="2" />
+        <small class="error" id="err-nickname"></small>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" id="email" required />
+        <small class="error" id="err-email"></small>
+      </label>
+
+      <label>
+        Mật khẩu
+        <input type="password" name="password" id="password" required />
+        <small class="hint">
+          Yêu cầu: có ký tự đặc biệt, 1–8 chữ số, 1 chữ cái in hoa.
+        </small>
+        <small class="error" id="err-password"></small>
+      </label>
+
+      <div class="actions">
+        <button type="submit">Tạo tài khoản</button>
+        <button type="button" id="close-register">Đóng</button>
+      </div>
+    </form>
+  </div>
+</div>
 
 <!-- JavaScript đặt ngay dưới nav, trước khi đóng body -->
 <script>
@@ -65,6 +105,7 @@
   </body>
 
 </html>
+
 
 
 
