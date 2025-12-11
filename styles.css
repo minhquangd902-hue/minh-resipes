@@ -48,6 +48,23 @@
   text-decoration: none;
   font-size: 18px;
 }
+ .modal {
+  position: fixed; inset: 0; display: none;
+  background: rgba(0,0,0,0.35);
+}
+.modal.open { display: grid; place-items: center; }
+.modal-content {
+  width: min(420px, 92vw);
+  background: #fff; border-radius: 12px; padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+label { display: block; margin: 12px 0; }
+input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+.hint { color: #666; display: block; margin-top: 4px; }
+.error { color: #d32f2f; display: block; min-height: 18px; margin-top: 4px; }
+.actions { display: flex; gap: 10px; margin-top: 12px; }
+button { padding: 10px 14px; border-radius: 8px; border: none; background: #2f6fed; color: #fff; cursor: pointer; }
+button#close-register { background: #999; }
 
   /* Hover hiệu ứng */
     .nav-item a {
@@ -112,6 +129,7 @@
   </div>
 </body>
 </html>
+
 
 
 
